@@ -1,0 +1,53 @@
+:root {
+  --body-bg: #123;
+  --nav-bg: #234;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: system-ui;
+}
+body {
+  margin: 0;
+  font-size: 1.25rem;
+  background: white;
+  padding-inline-start: 20rem;
+  color: white;
+  display: grid;
+}
+
+ .navbar {
+  background: var(--nav-bg);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-block: 2rem;
+}
+
+
+
+.nav_list {
+  margin: 0;
+  padding: 0;
+  /* i can do smtg here */
+  list-style: none;
+  display: grid;
+  gap: 4rem;
+  padding-block: 2rem;
+  font-size: 2rem;
+}
+
+.nav_list li{
+  background-color:white;
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+  border-radius: 100vw 0 0 100vw;
+}
+
+.nav_list li a{
+  color: black;
+  text-decoration: none;
+}
