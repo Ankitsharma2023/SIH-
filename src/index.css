@@ -1,0 +1,270 @@
+
+/* THIS IS FOR COURSE PART  */
+
+
+:root {
+    --body-bg: #123;
+    --nav-bg: #234;
+  }
+
+.fle{
+    display: flex;
+    margin-top: 90px;
+    margin-left: 150px;
+    padding: 150px;
+
+    gap: 50px;
+}
+.maincontainer{
+    /* position: absolute; */
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  
+  }
+  .maincontainer{
+    /* position: absolute; */
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  
+  }
+
+  .cours{
+    display: flex;
+    
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard:hover{
+    transform: rotateY(180deg);
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #457b9d;
+    color: white;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #adb5bd;
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .thefront h1, .theback h1{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .thefront p, .theback p{
+    font-family: 'zilla slab', sans-serif;
+    padding: 30px;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+  }
+  .ABC{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+
+
+  /* Skills wale ki css */
+
+  
+  
+body{
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .line{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-left: 200px;
+  }
+  .set{
+    font-size: 60px;
+    position: relative;
+    bottom: 150px;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #ffcc33;
+  }
+  .bar.back::before{
+    background-color: #a6cfe3;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  
+  /*  Resume wale ki css*/
+  
+
+  /* General Styles */
+.boi {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    bottom: 40px;
+  }
+  
+  .container {
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 5px;
+    font-size: 8px;
+  }
+  
+  section {
+    margin-bottom: 10px;
+  }
+  
+  .oon {
+    color: #333;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  .foot{
+    border-radius: 25px;
+  }
+
+  .resume{
+    margin-top: 25px;
+  }
