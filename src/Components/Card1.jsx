@@ -119,7 +119,7 @@ function CardComponent() {
                   <h2>About Company</h2>
                 </div>
                 <ul className="features">
-                  <li><i className="fas fa-check"></i><span><b>CEO:</b> John Doe, visionary leader.</span></li>
+                  <li><i className="fas fa-c  heck"></i><span><b>CEO:</b> John Doe, visionary leader.</span></li>
                   <li><i className="fas fa-check"></i><span><b>Established:</b>  Founded in 2010.</span></li>
                   <li><i className="fas fa-check"></i><span><b>Company-Type </b>  Product-focused tech company.</span></li>
                   <li><i className="fas fa-check"></i><span><b>Headquarters:</b>  Based in San Francisco.</span></li>
