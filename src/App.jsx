@@ -9,14 +9,14 @@ import Jobs from './pages/Job';
 import Navbar from './Components/Navbar';
 
 function App() {
-console.log("adnjcknsajnid")
+
   return (
     <>
-    <h1>kndklvk</h1>
+
     <Navbar/>
 
       <Routes>
-          <Route path='/' Component={Jobs}/>
+          <Route path='/' Component={Home}/>
           <Route path='/cource' Component={Cource}/>
           <Route path='/jobs' Component={Jobs} />
           <Route path='/skillasses' Component={Skillasses}/>
