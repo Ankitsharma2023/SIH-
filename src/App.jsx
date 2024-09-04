@@ -1,16 +1,32 @@
 import { useState } from 'react'
-import Navbar from '../Components/Navbar'
-import './App.css'
-import Card from '../Components/Card1'
+
+import { Routes,Route,BrowserRouter  } from 'react-router-dom'
+import './App.css';
+import Home from './pages/Home';
+import Cource from './pages/Cource';
+import Skillasses from './pages/Skillasses';
+import Jobs from './pages/Job';
+import Navbar from './Components/Navbar';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      
-      <Card/>
-      <Navbar/>
+
+    <Navbar/>
+
+      <Routes>
+          <Route path='/' Component={Home}/>
+          <Route path='/cource' Component={Cource}/>
+          <Route path='/jobs' Component={Jobs} />
+          <Route path='/skillasses' Component={Skillasses}/>
+        
+
+
+      </Routes>
+
+   
+
     </>
   )
 }
