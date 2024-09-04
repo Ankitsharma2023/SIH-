@@ -1,11 +1,16 @@
-import React from 'react'
+import { useState } from 'react'
+import Navbar from '../Components/Navbar'
 
-const Home = () => {
+import Card from '../Components/Card1'
+
+function Home () {
+  const [count, setCount] = useState(0)
+
   return (
     <>
-    
-    
-    <h1>home</h1>
+      
+      <Card/>
+      <Navbar/>
     </>
   )
 }
