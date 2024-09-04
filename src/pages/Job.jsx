@@ -1,8 +1,18 @@
 import React from 'react'
+import Skills from '../Components/Course'
+import Resume from '../Components/Resume'
 
 const Jobs = () => {
   return (
-    <div>Jobs</div>
+<>
+
+<Resume/>
+
+
+</>
+
+
+   
   )
 }
 

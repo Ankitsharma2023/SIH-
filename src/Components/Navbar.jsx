@@ -22,7 +22,7 @@ return(
 
 
 <li className="job">
-    <a href="/jobs">Job</a>
+    <a href="/jobs">Resume</a>
 </li>
 
 
@@ -35,7 +35,7 @@ return(
 
 
 <li className="skill_asses">
-    <a href="/skills_acces">Skill_Asses</a>
+    <a href="/skillasses">Skill_Asses</a>
 </li>
 
 

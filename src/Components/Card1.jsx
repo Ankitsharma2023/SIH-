@@ -1,7 +1,8 @@
 function CardComponent() {
     return (
       <>
-        <h3>Hello, this is for card components</h3>
+        <h2 className="hii">Hello Ankit !</h2>
+      
         <div className="job">
         <div className="wrapper ">
           <input type="radio" name="slider" id="tab-1" />
@@ -128,8 +129,12 @@ function CardComponent() {
               </div>
             </div>
           </div>
-          <button>Choose plan</button>
+          <button>Apply Now </button>
         </div>
+
+        {/*  */}
+
+        
         </div>
       </>
     );
