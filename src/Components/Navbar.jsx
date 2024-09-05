@@ -1,59 +1,30 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
+export default function Navbar () {
+  return (
+    <>
+      <nav className="navbar">
+        {/* <img src = "profile.png" alt =""/> */}
 
-export default function (){
+        <ul className="nav_list">
+          <li className="nav-list">
+            <NavLink to="/">Home</NavLink>
+          </li>
 
+          <li className="nav-list">
+            <NavLink to="/jobs">Job</NavLink>
+          </li>
 
-return(
+          <li className="nav-list">
+            <NavLink to="Cource">Course</NavLink>
+          </li>
 
-<>
-<nav className="navbar">
-
-{/* <img src = "profile.png" alt =""/> */}
-
-
-
-<ul className="nav_list">
-    
-<li className="home">
-    <a href="/">Home</a>
-</li>
-
-
-
-<li className="job">
-    <a href="/jobs">Job</a>
-</li>
-
-
-
-<li className="course">
-    <a href="Cource">Course</a>
-</li>
-
-
-
-
-<li className="skill_asses">
-    <a href="/skills_acces">Skill_Asses</a>
-</li>
-
-
-</ul>
-
-
-
-
-</nav>
-
-
-
-</>
-
-
-)
-
-
-
-
+          <li className="nav-list">
+            <NavLink to="//skillasses">Skill_Asses</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </>
+  );
 }
